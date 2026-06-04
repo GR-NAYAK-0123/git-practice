@@ -9,7 +9,8 @@ column_name = "hour_utc"
 
 # Histogram
 plt.figure(figsize=(8, 5))
-plt.hist(df[column_name], bins=10)
+# Updated: improved bin count for better distribution visibility
+plt.hist(df[column_name], bins=20)
 plt.title(f"Histogram of {column_name}")
 plt.xlabel(column_name)
 plt.ylabel("Frequency")
